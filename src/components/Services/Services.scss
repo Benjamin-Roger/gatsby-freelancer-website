@@ -1,0 +1,121 @@
+@import '../../styles/variables.scss';
+
+
+.services {
+
+    .services-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card-wrapper {
+            flex:1;
+        }
+
+        .card {
+            padding: 15px;
+            padding-right: 30px;
+            margin: 10px;
+            min-width: 200px;
+            border-radius: 5px;
+            position: relative;
+            height:300px;
+            transition:0.3s all ease-in-out;
+
+            &:hover {
+                transform:scale(1.05);
+            }
+
+            .logo-wrapper {
+                height: 75px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .card-logo {
+                    height: 80%;
+                    transition: transform 0.2s ease-in-out;
+                }
+            }
+
+            &.web {
+                background-color: $light-blue;
+
+                h3,
+                li {
+                    color: $dark-teal;
+                }
+            }
+
+            &.app {
+                background-color: $light-red;
+
+                h3,
+                li {
+                    color: $dark-red;
+                }
+            }
+
+            &.api {
+                background-color: $extra-light-orange;
+
+                h3,
+                li {
+                    color: $extra-dark-orange;
+                }
+            }
+
+            .technologies {
+                position: absolute;
+                right: 0;
+                top: 0px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                overflow: hidden;
+
+
+                .technology {
+                    width: 20px;
+                    height: 35px;
+                    background-color: #E6E6E6;
+                    border: 1px solid #D6D6D6;
+                    border-radius: 50px 0 0 50px;
+                    transition: 0.2s all;
+                    margin: 5px 0;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        height: 35px;
+                        margin: 5px;
+                        padding: 5px;
+                        opacity: 0;
+                        transition: 0.2s opacity ease-in-out;
+                    }
+
+                    &:hover {
+                        padding-right: 45px;
+
+                        img {
+                            display: block;
+                            opacity: 1;
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+
+        .card:hover .card-logo {
+            transform: translateY(-5px);
+        }
+
+
+
+    }
+
+}

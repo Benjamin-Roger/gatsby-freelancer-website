@@ -1,0 +1,40 @@
+[
+    {
+        "section" : {
+            "title": {
+                "fr": "Mes projets",
+                "en": "My projects"
+            },
+            
+            "buttonTextCTA": {
+                "fr": "Parlons du vôtre !",
+                "en": "Let's talk about your project!"
+            }
+        },
+        "projects": [
+            {
+                "category": "Application Web",
+                "image": {
+                    "href": "/images/cartesiam.jpg"
+                },
+                "title": "Conket.oi",
+                "text": {
+                    "fr": "Conketoi est une application dédiée à l’apprentissage du vietnamien. Avec l’aide de flashcards, les utilisateurs peuvent se remémorer les mots et leur prononciation. L’application a été réalisée en React, avec NextJS.",
+                    "en": "Conketoi is an app dedicated to learning Vietnamese. With the help of flashcards, users can practice both their listening, reading. A built-in voice help to compare if their pronunciation is correct. The app is made in React and NextJS."
+                }
+            },
+            {
+                "category": "Site Web",
+                "image": {
+                    "href": "/images/cartesiam.jpg"
+                },
+                "title": "Viettonkin Consulting",
+                "text": {
+                    "fr": "Viettonkin est un cabinet de conseil vietnamien spécialisé dans l'accompagnement à l'implantation d'entreprises étrangères en ASEAN. Je leur ai conçu un nouveau site avec un thème spécifique Wordpress, et intégralement adapté aux besoins de l'entreprise.",
+                    "en": "Viettonkin is a consulting company specialized in market entry in ASEAN countries for for foreign companies. I realized a custom-made theme, tailored for their needs." 
+                },
+                "href":"https://www.viettonkin.com.vn/"
+            }
+        ]
+    }
+]

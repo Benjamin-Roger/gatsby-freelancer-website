@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+
+.primary-button-wrapper,
+.contact {
+
+    .primary-button,button[type="submit"] {
+        padding: 15px 25px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: $dark-orange;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 7px $light-orange;
+        text-decoration: none;
+        font-weight: 700;
+
+
+        &:hover {
+            box-shadow: 0 5px $light-orange;
+            transform: translateY(2px);
+        }
+
+        &:active {
+            box-shadow: 0 2px $light-orange;
+            transform: translateY(5px);
+        }
+
+        &::selection {
+            background:none;
+            text-shadow:none;
+        }
+    }
+
+}
+
+
+.primary-button-wrapper {
+
+    margin: 15px 0;
+
+}

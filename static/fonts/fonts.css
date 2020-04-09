@@ -1,0 +1,18 @@
+@font-face {
+	font-family:'iCiel';
+	src:url('AvenirLTStd-Light.otf');
+}
+
+
+@font-face {
+	font-family:'iCiel';
+	font-weight:700;
+	src:url('AvenirLTStd-Heavy.otf');
+}
+
+
+@font-face {
+	font-family:'iCiel';
+	font-weight:900;
+	src:url('AvenirLTStd-Black.otf');
+}

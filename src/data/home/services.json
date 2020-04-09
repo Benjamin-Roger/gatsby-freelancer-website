@@ -1,0 +1,116 @@
+[
+    {
+        "section": {
+            "title": {
+                "fr": "Mes services",
+                "en": "My services"
+            },
+            "intro": {
+                "fr": "<p>Je me concentre principalement sur le développement Web. Lisez mon blog ou visitez mon portfolio pour en savoir plus !</p>                ",
+                "en": "<p>I mainly focus on front-end Web development. Visit my blog and my portfolio to know more!</p>"
+            },
+            "buttonTextCTA": {
+                "fr": "Contactez moi pour en savoir plus !",
+                "en": "Contact me to know more!"
+            }
+        },
+        "services": [
+            {
+                "title": {
+                    "fr": "Développement Web",
+                    "en": "Web development"
+                },
+                "class": "web",
+                "image": {
+                    "href": "/images/webdev.svg"
+                },
+                "subservices": {
+                    "fr": [
+                        "Création de site",
+                        "Refonte, rénovation",
+                        "Optimisation SEO"
+                    ],
+                    "en": [
+                        "Website creation",
+                        "Modernization",
+                        "SEO optimization"
+                    ]
+                },
+                "technologies": [
+                    {
+                        "title": "Wordpress",
+                        "logo": "/images/Wordpress.svg"
+                    },
+                    {
+                        "title": "React",
+                        "logo": "/images/React.svg"
+                    },
+                    {
+                        "title": "Wagtail",
+                        "logo": "/images/wagtail.svg"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "fr": "Applications Web",
+                    "en": "Web applications"
+                },
+                "class": "app",
+                "image": {
+                    "href": "/images/app-development.svg"
+                },
+                "subservices": {
+                    "fr": [
+                        "Applications métiers",
+                        "Jeux"
+                    ],
+                    "en": [
+                        "Business applications",
+                        "Games"
+                    ]
+                },
+                "technologies": [
+                    {
+                        "title": "React",
+                        "logo": "/images/React.svg"
+                    },
+                    {
+                        "title": "Node",
+                        "logo": "/images/nodejs.svg"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "fr": "Développement sur mesure",
+                    "en": "Specific development"
+                },
+                "class": "api",
+                "image": {
+                    "href": "/images/api.svg"
+                },
+                "subservices": {
+                    "fr": [
+                        "API",
+                        "Plugins"
+                    ],
+                    "en": [
+                        "API",
+                        "Plugins"
+                    ]
+                },
+                "technologies": [
+                    {
+                        "title": "Node",
+                        "logo": "/images/nodejs.svg"
+                    },
+                    {
+                        "title": "Wordpress",
+                        "logo": "/images/Wordpress.svg"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+
+.secondary-button-wrapper {
+
+    margin: 15px 0;
+    display:flex;
+    align-items:center;
+
+    .secondary-button {
+
+        color:$text-gray;
+        text-decoration:none;
+        font-weight: 700;
+
+        &::before {
+            content:'';
+            display:inline-block;
+            width:35px;
+            height:3px;
+            background-color: $text-gray;
+            margin:5px 5px 5px 0;
+            transition: 0.2s width;
+        }
+
+        &:hover::before {
+            width:50px;
+        }
+    }
+}

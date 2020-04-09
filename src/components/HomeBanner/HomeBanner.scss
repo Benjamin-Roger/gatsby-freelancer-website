@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+
+
+.banner {
+
+    background: $gradient-blue;
+    min-height: 80vh;
+    overflow: hidden;
+
+    h1 {
+        font-weight: 900;
+        margin-bottom: 10px;
+
+        background: linear-gradient(to right, $dark-teal, $light-teal 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .position {
+        font-size: 2em;
+        margin-top: 5px;
+    }
+
+    .banner-grid {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+
+        .column {
+            &.left {
+                flex: 2;
+                padding-right: 10px;
+                min-width: 275px;
+            }
+
+            &.right {
+
+
+                flex: 1;
+
+                    display:flex;
+                    justify-content: center;
+                    align-items:center;
+                    flex-flow: column wrap;
+
+                .picture-wrapper {
+
+                    
+                    position: relative;
+                    margin-bottom: 25px;
+
+                    .bean,
+                    .CV-picture {
+                        min-width: 200px;
+                        max-width: 350px;
+                    }
+
+                    .bean {
+                        // animation: bob 2s ease-in-out infinite;
+                        z-index: 1;
+
+                        position: absolute !important;
+                        bottom:50px;
+                        width:100%;
+                    }
+
+                    .CV-picture {
+                        z-index: 2;
+                    }
+                }
+
+                @media (max-width:800px) {
+                    .social-logos {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+@keyframes bob {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
