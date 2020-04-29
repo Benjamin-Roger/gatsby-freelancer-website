@@ -61,7 +61,6 @@ class Layout extends React.Component {
     getItems() {
 
         // Initialization
-        var home_link = '';
         var lang_switcher = '';
         var path = "/";
 
@@ -79,7 +78,7 @@ class Layout extends React.Component {
             <h2 key="0"><span>Menu</span></h2>,
             <Link key="0" to={path + "#top"} ><span>Home</span></Link>,
             <Link key="2" to={path + "#contact"}><span>Contact</span></Link>,
-            <Link key="3" to={"/blog"}><span>Blog</span></Link>,
+            <a key="3" href="/blog"><span>Blog</span></a>,
             <Link key="4" to={path + "#portfolio"}><span>Portfolio</span></Link>,
             lang_switcher
         ];

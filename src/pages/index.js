@@ -19,7 +19,7 @@ export default function HomePage({ data, location }) {
 	return (
 		<Layout
 			lang={language}
-			title={data.homeBanner.edges[0].node.frontmatter.author}
+			title={data.homeBanner.edges[0].node.frontmatter.title}
 		>
 
 			<IndexPage
