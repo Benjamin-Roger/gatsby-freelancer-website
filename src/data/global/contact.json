@@ -1,54 +1,54 @@
 [
-    {
-        "contact_text": {
-            "title": {
-                "fr": "Où me trouver ?",
-                "en": "Where to find me?"
-            },
-            "intro": {
-                "fr": "<p><strong>Whatsapp :</strong><a href='tel:+33658351332' title='tel'>+33 6 58 35 13 32</a></p>            <p><strong>Email :</strong>  <a href='mailto:benjamin.roger@sapiowork.com' title='email'>benjamin.roger@sapiowork.com</a></p><p><strong>Github :</strong> <a href='https: //github.com/Benjamin-Roger' title='Github'>https://github.com/Benjamin-Roger</a></p><p><strong>Par courrier pour les plus traditionnels :</strong>  5 rue des Suisses 75014 Paris</p>            <p>Vous avez besoin d’un conseil, vous avez des questions sur un projet ?</p>            <p>Parlons-en, gratuitement. Pas de vente forcée, on discute seulement !</p>",
-                "en": "<p><strong>Whatsapp:</strong><a href='tel:+33658351332' title='tel'>+33 6 58 35 13 32</a></p>             <p><strong>Email:</strong><a href='mailto:benjamin.roger@sapiowork.com' title='email'>benjamin.roger@sapiowork.com</a></p>            <p><strong>Github:</strong><a href='https: //github.com/Benjamin-Roger' title='Github'>https://github.com/Benjamin-Roger</a></p>            <p><strong>By traditional mail:</strong>  5 rue des Suisses 75014 Paris</p>            <p>Do you want some advice, any questions on a project?</p>            <p>Let's talk about it! For free, no worries!</p>"
-            }
+  {
+    "contact_text": {
+      "title": {
+        "fr": "Où me trouver ?",
+        "en": "Where to find me?"
+      },
+      "intro": {
+        "fr": "<p><strong>Whatsapp :</strong><a href='tel:+33658351332' title='tel'>+33 6 58 35 13 32</a></p>            <p><strong>Email :</strong>  <a href='mailto:benjamin.roger@sapiowork.com' title='email'>benjamin.roger@sapiowork.com</a></p><p><strong>Github :</strong> <a href='https: //github.com/Benjamin-Roger' title='Github'>https://github.com/Benjamin-Roger</a></p><p><strong>Par courrier pour les plus traditionnels :</strong>  5 rue des Suisses 75014 Paris</p>            <p>Vous avez besoin d’un conseil, vous avez des questions sur un projet ?</p>            <p>Parlons-en, gratuitement. Pas de pitch de vente, on discute seulement !</p>",
+        "en": "<p><strong>Whatsapp:</strong><a href='tel:+33658351332' title='tel'>+33 6 58 35 13 32</a></p>             <p><strong>Email:</strong><a href='mailto:benjamin.roger@sapiowork.com' title='email'>benjamin.roger@sapiowork.com</a></p>            <p><strong>Github:</strong><a href='https: //github.com/Benjamin-Roger' title='Github'>https://github.com/Benjamin-Roger</a></p>            <p><strong>By traditional mail:</strong>  5 rue des Suisses 75014 Paris</p>            <p>Do you want some advice, any questions on a project?</p>            <p>Let's talk about it! For free, no worries!</p>"
+      }
+    },
+    "form": {
+      "title": {
+        "fr": "Travaillons ensemble",
+        "en": "Let's work together"
+      },
+      "submit": {
+        "fr": "Envoyer",
+        "en": "Submit"
+      },
+      "form": {
+        "contact": {
+          "fr": "Email ou numéro de téléphone",
+          "en": "Email or phone number"
         },
-        "form": {
-            "title": {
-                "fr": "Travaillons ensemble",
-                "en": "Let's work together"
-            },
-            "submit": {
-                "fr": "Envoyer",
-                "en": "Submit"
-            },
-            "form": {
-                "contact": {
-                    "fr": "Email ou numéro de téléphone",
-                    "en": "Email or phone number"
-                },
-                "name": {
-                    "fr": "Nom",
-                    "en": "Name"
-                },
-                "subject": {
-                    "name": {
-                        "fr": "Projet",
-                        "en": "Project"
-                    },
-                    "placeholder": {
-                        "fr": "Mon projet est...",
-                        "en": "My project is..."
-                    }
-                },
-                "GPDR": {
-                    "name": {
-                        "fr": "RGPD",
-                        "en": "GPDR"
-                    },
-                    "value": {
-                        "fr": "En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale qui peut en découler.",
-                        "en": "By sending this form, I accept that these information will be used for business contact purposes."
-                    }
-                }
-            }
+        "name": {
+          "fr": "Nom",
+          "en": "Name"
+        },
+        "subject": {
+          "name": {
+            "fr": "Projet",
+            "en": "Project"
+          },
+          "placeholder": {
+            "fr": "Mon projet est...",
+            "en": "My project is..."
+          }
+        },
+        "GPDR": {
+          "name": {
+            "fr": "RGPD",
+            "en": "GPDR"
+          },
+          "value": {
+            "fr": "En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la relation commerciale qui peut en découler.",
+            "en": "By sending this form, I accept that these information will be used for business contact purposes."
+          }
         }
+      }
     }
+  }
 ]

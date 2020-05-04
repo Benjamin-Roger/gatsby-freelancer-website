@@ -1,58 +1,57 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import React from "react"
+import PropTypes from "prop-types"
+import Helmet from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
-
-function SEO({ description, lang, meta, image: metaImage_org, title, pathname }) {
-
-
+function SEO({
+  description,
+  lang,
+  meta,
+  image: metaImage_org,
+  title,
+  pathname,
+}) {
   // Get the data for SEO
   const data = useStaticQuery(
     graphql`
-  {
-    SEO: site {
-      siteMetadata {
-        author
-        captchaKey
-        description {
-          fr
-          en
+      {
+        SEO: site {
+          siteMetadata {
+            author
+            captchaKey
+            description {
+              fr
+              en
+            }
+            keywords
+            siteUrl
+            title {
+              fr
+              en
+            }
+          }
         }
-        keywords
-        siteUrl
-        title {
-          fr
-          en
+
+        cv: file(relativePath: { eq: "images/CV_picture.png" }) {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
-    }
-
-    cv:file(relativePath: { eq: "images/CV_picture.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-
-  }
-`
+    `
   )
 
-  const SEOData = data.SEO.siteMetadata;
+  const SEOData = data.SEO.siteMetadata
 
-  const metaDescription = description || SEOData.description[lang];
+  const metaDescription = description || SEOData.description[lang]
 
-  const metaImage = metaImage_org || data.cv.childImageSharp.fluid;
+  const metaImage = metaImage_org || data.cv.childImageSharp.fluid
 
-  const image = metaImage && metaImage.src
-    ? `${SEOData.siteUrl}${metaImage.src}`
-    : null
-  const canonical = pathname
-    ? `${SEOData.siteUrl}${pathname}`
-    : null
+  const image =
+    metaImage && metaImage.src ? `${SEOData.siteUrl}${metaImage.src}` : null
+  const canonical = pathname ? `${SEOData.siteUrl}${pathname}` : null
   return (
     <Helmet
       htmlAttributes={{
@@ -60,19 +59,23 @@ function SEO({ description, lang, meta, image: metaImage_org, title, pathname })
       }}
       title={title}
       titleTemplate={`%s | ${SEOData.title[lang]}`}
-      script={[{
-        src: "https://www.google.com/recaptcha/api.js?render=" + SEOData.captchaKey,
-        SameSite: "None",
-        Secure: true
-      }]}
+      script={[
+        {
+          src:
+            "https://www.google.com/recaptcha/api.js?render=" +
+            SEOData.captchaKey,
+          SameSite: "None",
+          Secure: true,
+        },
+      ]}
       link={
         canonical
           ? [
-            {
-              rel: "canonical",
-              href: canonical,
-            },
-          ]
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
           : []
       }
       meta={[
@@ -112,42 +115,40 @@ function SEO({ description, lang, meta, image: metaImage_org, title, pathname })
         .concat(
           metaImage
             ? [
-              {
-                property: "og:image",
-                content: image,
-              },
-              {
-                property: "og:image:width",
-                content: metaImage.width,
-              },
-              {
-                property: "og:image:height",
-                content: metaImage.height,
-              },
-              {
-                name: "twitter:card",
-                content: "summary_large_image",
-              },
-            ]
+                {
+                  property: "og:image",
+                  content: image,
+                },
+                {
+                  property: "og:image:width",
+                  content: metaImage.width,
+                },
+                {
+                  property: "og:image:height",
+                  content: metaImage.height,
+                },
+                {
+                  name: "twitter:card",
+                  content: "summary_large_image",
+                },
+              ]
             : [
-              {
-                name: "twitter:card",
-                content: "summary",
-              },
-            ]
+                {
+                  name: "twitter:card",
+                  content: "summary",
+                },
+              ]
         )
         .concat(meta)}
     />
   )
 }
 
-
 SEO.defaultProps = {
   lang: `fr`,
   meta: [],
   description: ``,
 }
-
 
 SEO.propTypes = {
   description: PropTypes.string,

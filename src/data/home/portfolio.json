@@ -1,51 +1,51 @@
 [
-    {
-        "section" : {
-            "title": {
-                "fr": "Mes projets récents",
-                "en": "My recent projects"
-            },
-            
-            "buttonTextCTA": {
-                "fr": "Parlons du vôtre !",
-                "en": "Let's talk about your project!"
-            }
+  {
+    "section": {
+      "title": {
+        "fr": "Mes projets récents",
+        "en": "My recent projects"
+      },
+
+      "buttonTextCTA": {
+        "fr": "Parlons du vôtre !",
+        "en": "Let's talk about your project!"
+      }
+    },
+    "projects": [
+      {
+        "category": "Web Application",
+        "image": {
+          "href": "/images/conketoi.png"
         },
-        "projects": [
-            {
-                "category": "Web Application",
-                "image": {
-                    "href": "/images/conketoi.png" 
-                },
-                "title": "Conketoi",
-                "text": {
-                    "fr": "Conketoi est une application dédiée à l’apprentissage du vietnamien. Avec l’aide de flashcards, les utilisateurs peuvent se remémorer les mots et leur prononciation. L’application a été réalisée en React, avec NextJS.",
-                    "en": "Conketoi is an app dedicated to learning Vietnamese. With the help of flashcards, users can practice both their listening, reading. A built-in voice helps comparing if their pronunciation is correct. The app is made in React and NextJS."
-                }
-            },
-            {
-                "category": "Website",
-                "image": {
-                    "href": "/images/viettonkin.png"
-                },
-                "title": "Viettonkin Consulting",
-                "text": {
-                    "fr": "Viettonkin est un cabinet de conseil vietnamien spécialisé dans l'accompagnement à l'implantation d'entreprises étrangères en ASEAN. Je leur ai conçu un nouveau site avec un thème spécifique Wordpress, et intégralement adapté aux besoins de l'entreprise.",
-                    "en": "Viettonkin is a consulting company specialized in market entry in ASEAN countries for for foreign companies. I realized a custom-made theme, tailored for their needs." 
-                },
-                "href":"https://www.viettonkin.com.vn/"
-            },
-            {
-                "category": "Website",
-                "image": {
-                    "href": "/images/raconteur.png"
-                },
-                "title": "Raconteur",
-                "text": {
-                    "fr": "Raconteur est une agence créative, spécialisée dans la vidéo et la création graphique. Je leur ai conçu un site Wordpress modulable a été créé pour héberger leur portfolio en ligne.",
-                    "en": "Raconteur is a creative agency. I've helped them to create an online portfolio to showcase their graphics and video creations." 
-                }
-            }
-        ]
-    }
+        "title": "Conketoi",
+        "text": {
+          "fr": "Conketoi est une application dédiée à l’apprentissage du vietnamien. Avec l’aide de flashcards, les utilisateurs peuvent se remémorer les mots et leur prononciation. L’application a été réalisée en React, avec NextJS.",
+          "en": "Conketoi is an app dedicated to learning Vietnamese. With the help of flashcards, users can practice both their listening, reading. A built-in voice helps comparing if their pronunciation is correct. The app is made in React and NextJS."
+        }
+      },
+      {
+        "category": "Website",
+        "image": {
+          "href": "/images/viettonkin.png"
+        },
+        "title": "Viettonkin Consulting",
+        "text": {
+          "fr": "Viettonkin est un cabinet de conseil vietnamien spécialisé dans l'accompagnement à l'implantation d'entreprises étrangères en ASEAN. Le projet était la conception d'un nouveau site avec un thème spécifique Wordpress, et intégralement adapté aux besoins de l'entreprise.",
+          "en": "Viettonkin is a consulting company specialized in market entry in ASEAN countries for for foreign companies. I realized a custom-made theme, tailored for their needs."
+        },
+        "href": "https://www.viettonkin.com.vn/"
+      },
+      {
+        "category": "Website",
+        "image": {
+          "href": "/images/raconteur.png"
+        },
+        "title": "Raconteur",
+        "text": {
+          "fr": "Raconteur est une agence créative, spécialisée dans la vidéo et la création graphique. Je leur ai conçu un site Wordpress modulable a été créé pour héberger leur portfolio en ligne.",
+          "en": "Raconteur is a creative agency. I've helped them to create an online portfolio to showcase their graphics and video creations."
+        }
+      }
+    ]
+  }
 ]

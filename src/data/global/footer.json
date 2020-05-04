@@ -1,78 +1,78 @@
 [
-    {
-        "footer-menu": {
-            "title": {
-                "fr": "Plan du site",
-                "en": "Sitemap"
-            },
-            "links": [
-                {
-                    "name": {
-                        "fr": "Projets",
-                        "en": "Projects"
-                    },
-                    "href": "#portfolio"
-                },
-                {
-                    "name": {
-                        "fr": "Services",
-                        "en": "Services"
-                    },
-                    "href": "#services"
-                },
-                {
-                    "name": {
-                        "fr": "Technologies",
-                        "en": "Technologies"
-                    },
-                    "href": "#technologies"
-                },
-                {
-                    "name": {
-                        "fr": "Parcours",
-                        "en": "Background"
-                    },
-                    "href": "#story"
-                },
-                {
-                    "name": {
-                        "fr": "Blog",
-                        "en": "Blog"
-                    },
-                    "href": "/blog"
-                },
-                {
-                    "name": {
-                        "fr": "Contact",
-                        "en": "Contact"
-                    },
-                    "href": "#contact"
-                },
-                {
-                    "name": {
-                        "fr": "Mentions légales",
-                        "en": "Legal notice"
-                    },
-                    "href": "/legal-notice"
-                },
-                {
-                    "name": {
-                        "fr": "Politique de confidentialité",
-                        "en": "Privacy policy"
-                    },
-                    "href": "/privacy-policy"
-                }
-            ]
+  {
+    "footer-menu": {
+      "title": {
+        "fr": "Plan du site",
+        "en": "Sitemap"
+      },
+      "links": [
+        {
+          "name": {
+            "fr": "Projets",
+            "en": "Projects"
+          },
+          "href": "#portfolio"
         },
-        "social": {
-            "title": {
-                "fr": "Réseaux sociaux",
-                "en": "Social media"
-            }
+        {
+          "name": {
+            "fr": "Services",
+            "en": "Services"
+          },
+          "href": "#services"
         },
-        "contact": {
-            "fr":"<h3>Coordonn&eacute;es</h3><p><strong>Tel/Whatsapp : </strong><a href='tel:+33658351332'>+33 6 58 35 13 32</a></p><p><strong>Email : </strong><a href='mailto:benjamin.roger@sapiowork.com'>benjamin.roger@sapiowork.com</a></p><p><strong>Adresse : </strong>5 rue des Suisses 75014 Paris</p>",
-            "en":"<h3>Contact</h3><p><strong>Tel/Whatsapp:</strong> <a href='tel:+33658351332'>+33 6 58 35 13 32</a></p><p><strong>Email: </strong><a href='mailto:benjamin.roger@sapiowork.com'>benjamin.roger@sapiowork.com</a></p><p><strong>Address: </strong>5 rue des Suisses 75014 Paris</p>"
+        {
+          "name": {
+            "fr": "Technologies",
+            "en": "Technologies"
+          },
+          "href": "#technologies"
+        },
+        {
+          "name": {
+            "fr": "Parcours",
+            "en": "Background"
+          },
+          "href": "#story"
+        },
+        {
+          "name": {
+            "fr": "Blog",
+            "en": "Blog"
+          },
+          "href": "https://blog.sapiowork.com/"
+        },
+        {
+          "name": {
+            "fr": "Contact",
+            "en": "Contact"
+          },
+          "href": "#contact"
+        },
+        {
+          "name": {
+            "fr": "Mentions légales",
+            "en": "Legal notice"
+          },
+          "href": "/legal-notice"
+        },
+        {
+          "name": {
+            "fr": "Politique de confidentialité",
+            "en": "Privacy policy"
+          },
+          "href": "/privacy-policy"
         }
+      ]
+    },
+    "social": {
+      "title": {
+        "fr": "Réseaux sociaux",
+        "en": "Social media"
+      }
+    },
+    "contact": {
+      "fr": "<h3>Coordonn&eacute;es</h3><p><strong>Tel/Whatsapp : </strong><a href='tel:+33658351332'>+33 6 58 35 13 32</a></p><p><strong>Email : </strong><a href='mailto:benjamin.roger@sapiowork.com'>benjamin.roger@sapiowork.com</a></p><p><strong>Adresse : </strong>5 rue des Suisses 75014 Paris</p>",
+      "en": "<h3>Contact</h3><p><strong>Tel/Whatsapp:</strong> <a href='tel:+33658351332'>+33 6 58 35 13 32</a></p><p><strong>Email: </strong><a href='mailto:benjamin.roger@sapiowork.com'>benjamin.roger@sapiowork.com</a></p><p><strong>Address: </strong>5 rue des Suisses 75014 Paris</p>"
     }
+  }
 ]

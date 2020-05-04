@@ -1,18 +1,18 @@
 [
-    {
-        "section": {
-            "title": {
-                "fr": "Mon parcours",
-                "en": "My background"
-            },
-            "intro": {
-                "fr": "<p>Ecrivant mes premières lignes de code en Flash en 2004, l’IT fait partie de ma vie jusqu’à aujourd’hui : consultant SI puis développeur Web freelance.</p>                <p>Ayant participé à des projets publics et privés de moyenne à grande envergure, j’ai acquis de bonnes connaissances métier dans plusieurs industries : actuariat, assurance / prévoyance sociale, finance, comptabilité, maritime supply chain...</p>                <p>Doté de cette compréhension des besoins métiers des projets. je peux produire des  sites correspondant à votre activité et des applications qui vous seront vraiment utiles.</p>                <p>Et pourquoi Sapiowork ? Parce que Sapio signifie en latin “s’y connaitre”. Mon travail repose sur la connaissance des enjeux métiers, tout simplement !</p>                <p><strong>Vous avez un projet et avez besoin d’un développeur qui comprend votre métier ? Vous êtes au bon endroit !</strong></p>                ",
-                "en": "<p>I started out coding in 2004, writing some Flash programs, and IT has been part of my life ever since: IT consultant and then freelance web developer.</p>                 <p>By taking part to public and private projects, going from local to national size, I&#39;ve gained field knowledge in several industries: insurance, actuary, finance, accounting, maritime logistics, supply chain...</p>                 <p>With this knowledge in hand, I can produce websites and web apps that truly answer your business needs.</p>                <p><strong>You have a project and want a developer who understands your business. Let&#39;s get in touch!</strong></p>"
-            },
-            "buttonTextCTA": {
-                "fr": "On s'appelle ?",
-                "en": "Let's call!"
-            }
-        }
+  {
+    "section": {
+      "title": {
+        "fr": "Mon parcours",
+        "en": "My background"
+      },
+      "intro": {
+        "fr": "<p>Ecrivant mes premières lignes de code en Flash en 2004, l’IT fait partie de ma vie jusqu’à aujourd’hui : consultant SI puis développeur Web freelance.</p>                <p>Ayant participé à des projets publics et privés de moyenne à grande envergure, j’ai acquis de bonnes connaissances métier dans plusieurs industries : actuariat, assurance / prévoyance sociale, finance, comptabilité, maritime supply chain...</p>                <p>Doté de cette compréhension des besoins métiers des projets. je peux produire des  sites correspondant à votre activité et des applications qui vous seront vraiment utiles.</p>                <p>Et pourquoi Sapiowork ? Parce que Sapio signifie en latin “s’y connaitre”. Mon travail repose sur la connaissance des enjeux métiers, tout simplement !</p>                <p><strong>Vous avez un projet et avez besoin d’un développeur qui comprend votre métier ? Vous êtes au bon endroit !</strong></p>                ",
+        "en": "<p>I started out coding in 2004, writing some Flash programs, and IT has been part of my life ever since: IT consultant and then freelance web developer.</p>                 <p>By taking part to public and private projects, going from local to national size, I&#39;ve gained field knowledge in several industries: insurance, actuary, finance, accounting, maritime logistics, supply chain...</p>                 <p>With this knowledge in hand, I can produce websites and web apps that truly answer your business needs.</p>                <p><strong>You have a project and want a developer who understands your business. Let&#39;s get in touch!</strong></p>"
+      },
+      "buttonTextCTA": {
+        "fr": "On s'appelle ?",
+        "en": "Let's call!"
+      }
     }
+  }
 ]

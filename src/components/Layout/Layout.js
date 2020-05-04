@@ -1,135 +1,138 @@
-import React from 'react';
-import './Layout.scss';
-import { Link } from 'gatsby';
+import React from "react"
+import "./Layout.scss"
+import { Link } from "gatsby"
 
-import SEO from '../SEO.js';
-import Footer from '../Footer/Footer.js';
+import SEO from "../SEO.js"
+import Footer from "../Footer/Footer.js"
 
-
-import BurgerMenu from 'react-burger-menu';
+import BurgerMenu from "react-burger-menu"
 
 class MenuWrap extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            hidden: false
-        };
+  constructor(props) {
+    super(props)
+    this.state = {
+      hidden: false,
+    }
+  }
+
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    const sideChanged =
+      this.props.children.props.right !== nextProps.children.props.right
+
+    if (sideChanged) {
+      this.setState({ hidden: true })
+
+      setTimeout(() => {
+        this.show()
+      }, this.props.wait)
+    }
+  }
+
+  show() {
+    this.setState({ hidden: false })
+  }
+
+  render() {
+    let style
+
+    if (this.state.hidden) {
+      style = { display: "none" }
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps) {
-        const sideChanged = this.props.children.props.right !== nextProps.children.props.right;
-
-        if (sideChanged) {
-            this.setState({ hidden: true });
-
-            setTimeout(() => {
-                this.show();
-            }, this.props.wait);
-        }
-
-    }
-
-    show() {
-        this.setState({ hidden: false });
-    };
-
-
-    render() {
-        let style;
-
-        if (this.state.hidden) {
-            style = { display: 'none' };
-        }
-
-        return (
-            <div style={style} className={this.props.side}>
-                {this.props.children}
-            </div>
-        );
-    }
+    return (
+      <div style={style} className={this.props.side}>
+        {this.props.children}
+      </div>
+    )
+  }
 }
 
 class Layout extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            currentMenu: 'push',
-            side: 'right'
-        };
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentMenu: "push",
+      side: "right",
+    }
+  }
+
+  getItems() {
+    // Initialization
+    var lang_switcher = ""
+    var path = "/"
+
+    if (this.props.lang === "fr") {
+      lang_switcher = (
+        <Link key="5" to={"/en"}>
+          <span>English website</span>
+        </Link>
+      )
+    } else {
+      lang_switcher = (
+        <Link key="5" to={"/"}>
+          <span>Site en français</span>
+        </Link>
+      )
+      path = "en/"
     }
 
-    getItems() {
+    // Get all items of the menu
 
-        // Initialization
-        var lang_switcher = '';
-        var path = "/";
+    let items = [
+      <h2 key="0">
+        <span>Menu</span>
+      </h2>,
+      <Link key="0" to={path + "#top"}>
+        <span>Home</span>
+      </Link>,
+      <Link key="2" to={path + "#contact"}>
+        <span>Contact</span>
+      </Link>,
+      <a key="3" href="/blog">
+        <span>Blog</span>
+      </a>,
+      <Link key="4" to={path + "#portfolio"}>
+        <span>Portfolio</span>
+      </Link>,
+      lang_switcher,
+    ]
 
-        if (this.props.lang === "fr") {
-            lang_switcher = <Link key="5" to={"/en"} ><span>English website</span></Link>;
+    return items
+  }
 
-        } else {
-            lang_switcher = <Link key="5" to={"/"} ><span>Site en français</span></Link>;
-            path = "en/";
-        };
+  getMenu() {
+    const Menu = BurgerMenu[this.state.currentMenu]
 
-        // Get all items of the menu
+    return (
+      <MenuWrap wait={10} side={this.state.side}>
+        <Menu
+          width={"300px"}
+          id={this.state.currentMenu}
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
+          right={this.state.side === "right"}
+        >
+          {this.getItems()}
+        </Menu>
+      </MenuWrap>
+    )
+  }
 
-        let items = [
-            <h2 key="0"><span>Menu</span></h2>,
-            <Link key="0" to={path + "#top"} ><span>Home</span></Link>,
-            <Link key="2" to={path + "#contact"}><span>Contact</span></Link>,
-            <a key="3" href="/blog"><span>Blog</span></a>,
-            <Link key="4" to={path + "#portfolio"}><span>Portfolio</span></Link>,
-            lang_switcher
-        ];
+  render() {
+    return (
+      <div id="outer-container" style={{ height: "100%" }}>
+        {this.getMenu()}
 
-        return items;
-    }
+        <SEO lang={this.props.lang} title={this.props.title} />
 
-    getMenu() {
-        const Menu = BurgerMenu[this.state.currentMenu];
+        <main id="page-wrap">
+          {this.props.children}
 
-        return (
-            <MenuWrap wait={10} side={this.state.side}>
-                <Menu width={'300px'} id={this.state.currentMenu} pageWrapId={'page-wrap'} outerContainerId={'outer-container'} right={(this.state.side === 'right')}>
-                    {this.getItems()}
-                </Menu>
-            </MenuWrap>
-        );
-    }
-
-    render() {
-
-
-        return (
-            <div id="outer-container" style={{ height: '100%' }}>
-                {this.getMenu()}
-
-                <SEO
-                    lang={this.props.lang}
-                    title={this.props.title}
-                />
-
-                <main id="page-wrap">
-                    {this.props.children}
-
-
-                    <Footer lang={this.props.lang} />
-
-                    
-                </main>
-
-
-                
-
-
-
-            </div>
-        );
-    }
+          <Footer lang={this.props.lang} />
+        </main>
+      </div>
+    )
+  }
 }
 
-
-
-
-export default Layout;
+export default Layout

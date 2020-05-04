@@ -14,5 +14,4 @@ Former project manager and IT consultant, I know your expectations and frustrati
 
 This website is made with Gatsby, ReactJS and GraphQL. Find its code [here](https://github.com/Benjamin-Roger/gatsby-resume/)!
 
-
 **A project ? You are in the right place!**

@@ -1,76 +1,62 @@
-import React from "react";
-import { useStaticQuery } from 'gatsby';
-import PrimaryButton from "../PrimaryButton/PrimaryButton.js";
-import PortfolioCard from "./PortfolioCard.js";
-import './Portfolio.scss';
+import React from "react"
+import { useStaticQuery } from "gatsby"
+import PrimaryButton from "../PrimaryButton/PrimaryButton.js"
+import PortfolioCard from "./PortfolioCard.js"
+import "./Portfolio.scss"
 
-import { Fade } from 'react-awesome-reveal';
-
-
+import { Fade } from "react-awesome-reveal"
 
 function Portfolio(props) {
+  const data = useStaticQuery(graphql`
+    query PortfolioQuery {
+      portfolio: portfolioJson {
+        section {
+          title {
+            en
+            fr
+          }
+          buttonTextCTA {
+            fr
+            en
+          }
+        }
+        projects {
+          category
+          title
+          text {
+            fr
+            en
+          }
+          image {
+            href
+          }
 
+          href
+        }
+      }
+    }
+  `)
 
-	const data = useStaticQuery(graphql`
-	query PortfolioQuery {
-		portfolio: portfolioJson {
-		  section {
-			title {
-			  en
-			  fr
-			}
-			buttonTextCTA {
-			  fr
-			  en
-			}
-		  }
-		  projects {
-			category
-			title
-			text {
-			  fr
-			  en
-			}
-			image {
-			  href
-			}
+  const section = data.portfolio.section
+  const projects = data.portfolio.projects
 
-			href
-		  }
-		}
-	  }
-	  `);
+  return (
+    <section id="portfolio" className="portfolio">
+      <div className="container">
+        <h2 className="red-wave">{section.title[props.lang]}</h2>
 
+        <Fade direction="top" className="portfolio-grid" triggerOnce cascade>
+          {projects.map((project, i) => (
+            <PortfolioCard key={i} lang={props.lang} content={project} />
+          ))}
+        </Fade>
 
-
-
-
-	const section = data.portfolio.section;
-	const projects = data.portfolio.projects;
-
-
-	return (
-		<section id="portfolio" className="portfolio">
-			<div className="container">
-				<h2 className="red-wave" >{section.title[props.lang]}</h2>
-
-
-				<Fade direction="top" className="portfolio-grid" triggerOnce cascade>
-
-					{projects.map((project, i) => <PortfolioCard key={i} lang={props.lang} content={project} />)}
-
-
-				</Fade>
-
-
-				<PrimaryButton align="center" href="#contact">{section.buttonTextCTA[props.lang]}</PrimaryButton>
-
-			</div>
-
-
-		</section>
-	)
-
+        <PrimaryButton align="center" href="#contact">
+          {section.buttonTextCTA[props.lang]}
+        </PrimaryButton>
+      </div>
+    </section>
+  )
 }
 
-export default Portfolio;
+export default Portfolio
