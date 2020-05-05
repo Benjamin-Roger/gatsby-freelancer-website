@@ -1,7 +1,10 @@
 @import '../../styles/variables.scss';
 
 
-
+.page-wrapper {
+    overflow: auto;
+    height: 100%;
+}
 
 //
 // Burger menu custom styles

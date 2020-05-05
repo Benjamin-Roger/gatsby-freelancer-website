@@ -90,7 +90,7 @@ class Layout extends React.Component {
       <Link key="2" to={path + "#contact"}>
         <span>Contact</span>
       </Link>,
-      <a key="3" href="/blog">
+      <a key="3" href="https://blog.sapiowork.com/">
         <span>Blog</span>
       </a>,
       <Link key="4" to={path + "#portfolio"}>
@@ -127,7 +127,7 @@ class Layout extends React.Component {
 
         <SEO lang={this.props.lang} title={this.props.title} />
 
-        <Fade triggerOnce>
+        <Fade className="page-wrapper" triggerOnce>
           <main id="page-wrap">
             {this.props.children}
             <Footer lang={this.props.lang} />
