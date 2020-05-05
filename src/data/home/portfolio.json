@@ -15,7 +15,7 @@
       {
         "category": "Web Application",
         "image": {
-          "href": "/images/conketoi.png"
+          "href": "/images/conketoi.jpg"
         },
         "title": "Conketoi",
         "text": {
@@ -26,7 +26,7 @@
       {
         "category": "Website",
         "image": {
-          "href": "/images/viettonkin.png"
+          "href": "/images/viettonkin.jpg"
         },
         "title": "Viettonkin Consulting",
         "text": {
@@ -38,7 +38,7 @@
       {
         "category": "Website",
         "image": {
-          "href": "/images/raconteur.png"
+          "href": "/images/raconteur.jpg"
         },
         "title": "Raconteur",
         "text": {

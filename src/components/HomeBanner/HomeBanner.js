@@ -15,7 +15,12 @@ function HomeBannerComponent(props) {
       <div className="container">
         <div className="banner-grid">
           <div className="column left">
-            <Slide direction="left" cascade damping="0.5">
+            <Slide
+              className="opacity-breaker"
+              direction="left"
+              cascade
+              damping="0.3"
+            >
               <h1>{props.author ? props.author : "Benjamin Roger"}</h1>
               <p className="position">{props.position}</p>
             </Slide>

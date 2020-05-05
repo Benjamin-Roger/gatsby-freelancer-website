@@ -53,14 +53,14 @@
             "fr": "Mentions légales",
             "en": "Legal notice"
           },
-          "href": "/legal-notice"
+          "href": "https://blog.sapiowork.com/legal-notice"
         },
         {
           "name": {
             "fr": "Politique de confidentialité",
             "en": "Privacy policy"
           },
-          "href": "/privacy-policy"
+          "href": "https://blog.sapiowork.com/privacy-policy"
         }
       ]
     },

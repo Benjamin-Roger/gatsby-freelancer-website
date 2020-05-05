@@ -2,16 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/Layout.js"
-
 import IndexPage from "../components/IndexPage/IndexPage.js"
 
+import languageSelector from "../inc/languageSelector.js"
+
 export default function HomePage({ data, location }) {
-
-  var language = 'fr';
-
-  if (location.pathname.includes('/en/')) {
-    language = "en"
-  };
+  var language = languageSelector(location.pathname)
 
   return (
     <Layout

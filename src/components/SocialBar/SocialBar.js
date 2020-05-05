@@ -27,7 +27,7 @@ function SocialBar() {
         href="https://twitter.com/BenjRoger"
         title="Twitter"
       >
-        <img alt="" src="/images/Twitter.svg" />
+        <img alt="" src="/images/twitter.svg" />
       </a>
       <a
         rel="noopener noreferrer"

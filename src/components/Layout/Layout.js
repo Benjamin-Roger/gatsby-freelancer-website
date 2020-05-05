@@ -7,6 +7,8 @@ import Footer from "../Footer/Footer.js"
 
 import BurgerMenu from "react-burger-menu"
 
+import { Fade } from "react-awesome-reveal"
+
 class MenuWrap extends React.Component {
   constructor(props) {
     super(props)
@@ -63,7 +65,7 @@ class Layout extends React.Component {
 
     if (this.props.lang === "fr") {
       lang_switcher = (
-        <Link key="5" to={"/en"}>
+        <Link key="5" to={"/en/"}>
           <span>English website</span>
         </Link>
       )
@@ -125,11 +127,12 @@ class Layout extends React.Component {
 
         <SEO lang={this.props.lang} title={this.props.title} />
 
-        <main id="page-wrap">
-          {this.props.children}
-
-          <Footer lang={this.props.lang} />
-        </main>
+        <Fade triggerOnce>
+          <main id="page-wrap">
+            {this.props.children}
+            <Footer lang={this.props.lang} />
+          </main>
+        </Fade>
       </div>
     )
   }
