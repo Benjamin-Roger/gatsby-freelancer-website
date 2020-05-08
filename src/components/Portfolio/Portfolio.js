@@ -45,9 +45,11 @@ function Portfolio(props) {
       <div className="container">
         <h2 className="red-wave">{section.title[props.lang]}</h2>
 
-        <Fade direction="top" className="portfolio-grid" triggerOnce cascade>
+        <Fade direction="top" className="portfolio-grid" triggerOnce cascade damping=".5">
           {projects.map((project, i) => (
-            <PortfolioCard key={i} lang={props.lang} content={project} />
+            <div>
+              <PortfolioCard key={i} lang={props.lang} content={project} />
+            </div>
           ))}
         </Fade>
 

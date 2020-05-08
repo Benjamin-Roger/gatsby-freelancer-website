@@ -20,6 +20,7 @@ function HomeBannerComponent(props) {
               direction="left"
               cascade
               damping="0.3"
+              triggerOnce
             >
               <h1>{props.author ? props.author : "Benjamin Roger"}</h1>
               <p className="position">{props.position}</p>

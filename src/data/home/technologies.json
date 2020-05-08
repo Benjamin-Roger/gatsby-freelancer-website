@@ -9,7 +9,7 @@
         {
           "title": "Wordpress",
           "image": {
-            "href": "/images/wordpress.svg"
+            "href": "/images/Wordpress.svg"
           },
           "text": {
             "fr": "CMS le plus utilisé et incontournable. Je réalise des thèmes sur mesure et des plugins.",
@@ -19,7 +19,7 @@
         {
           "title": "React/Next/Express/NodeJS",
           "image": {
-            "href": "/images/react.svg"
+            "href": "/images/React.svg"
           },
           "text": {
             "fr": "Framework résilient, je réalise des applications (dashboard, applications complètes...) sur React avec Next ou Express selon les besoins.",
