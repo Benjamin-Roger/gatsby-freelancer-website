@@ -1,4 +1,4 @@
-This repo is the Gatsby site hosted at ([www.sapiowork.com](https://www.sapiowork.com).
+This repo is the Gatsby site hosted at [www.sapiowork.com](https://www.sapiowork.com).
 
 Made with ReactJS and Gatsby, it's made for speed!
 
