@@ -16,4 +16,4 @@ Do you have suggestions or feedback? [Let's get in touch](https://www.sapiowork.
 
 ## Author
 
-* Benjamin Roger ([Website](https://www.sapiowork.com)
+* Benjamin Roger ([Website](https://www.sapiowork.com))
