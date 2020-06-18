@@ -134,8 +134,6 @@ function Contact(props) {
                 </label>
               </div>
 
-              <div className="g-recaptcha" data-sitekey={captchaKey}></div>
-
               <div style={{ textAlign: "center" }}>
                 <button type="submit">{contact_form.submit[props.lang]}</button>
               </div>

@@ -12,11 +12,11 @@ module.exports = {
     },
     siteUrl: `https://www.sapiowork.com`,
     description: {
-      fr: `Je suis un développeur Web freelance spécialisé en front end. Prêts pour vos projets en React/NodeJS, Wagtail et Wordpress. Contactez-moi !`,
+      fr: `Je suis un développeur Web freelance spécialisé front end. Prêts pour vos projets en React/NodeJS, Wagtail et Wordpress. Contactez-moi !`,
       en: `I am a freelance web developer, specialized in front end. Ready for a React/NodeJS, Wordpress or Wagtail project? Contact me!`,
     },
     author: "Benjamin Roger",
-    captchaKey: "6LdsOuEUAAAAAMSpSbcCSnEdtoQVUM75Mz3peYY2",
+    captchaKey: "6LfKNPQUAAAAABidYa2yr-tiKl4oHadobEROyygs",
     keywords:
       "react,reactJS,freelance,développeur,wagtail,wordpress,api paris,remote,france",
   },
@@ -91,6 +91,16 @@ module.exports = {
       options: {
         icon: `src/images/favicon.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Lora`,
+          `source sans pro\:700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     },
     // Add other plugins here
   ],

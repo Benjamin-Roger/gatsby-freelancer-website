@@ -32,10 +32,12 @@ function SEO({
           }
         }
 
-        cv: file(relativePath: { eq: "images/CV_picture.png" }) {
+        cv: file(relativePath: { eq: "images/CV_picture_media.png" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
+              presentationWidth
+              presentationHeight
             }
           }
         }
@@ -59,23 +61,21 @@ function SEO({
       }}
       title={title}
       titleTemplate={`%s | ${SEOData.title[lang]}`}
-      script={[
-        {
-          src:
-            "https://www.google.com/recaptcha/api.js?render=" +
-            SEOData.captchaKey,
-          SameSite: "None",
-          Secure: true,
-        },
-      ]}
+      // script={[
+      //   {
+      //     src:"https://www.google.com/recaptcha/api.js?render=" + SEOData.captchaKey,
+      //     SameSite: "None",
+      //     Secure: true,
+      //   },
+      // ]}
       link={
         canonical
           ? [
-              {
-                rel: "canonical",
-                href: canonical,
-              },
-            ]
+            {
+              rel: "canonical",
+              href: canonical,
+            },
+          ]
           : []
       }
       meta={[
@@ -89,7 +89,7 @@ function SEO({
         },
         {
           property: `og:title`,
-          content: title,
+          content: SEOData.author, //return author name
         },
         {
           property: `og:description`,
@@ -100,12 +100,16 @@ function SEO({
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: SEOData.siteUrl,
+        },
+        {
           name: `twitter:creator`,
           content: SEOData.author,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content:  SEOData.author, //return author name
         },
         {
           name: `twitter:description`,
@@ -115,29 +119,29 @@ function SEO({
         .concat(
           metaImage
             ? [
-                {
-                  property: "og:image",
-                  content: image,
-                },
-                {
-                  property: "og:image:width",
-                  content: metaImage.width,
-                },
-                {
-                  property: "og:image:height",
-                  content: metaImage.height,
-                },
-                {
-                  name: "twitter:card",
-                  content: "summary_large_image",
-                },
-              ]
+              {
+                property: "og:image",
+                content: image,
+              },
+              {
+                property: "og:image:width",
+                content: metaImage.presentationWidth,
+              },
+              {
+                property: "og:image:height",
+                content: metaImage.presentationHeight,
+              },
+              {
+                name: "twitter:card",
+                content: "summary_large_image",
+              },
+            ]
             : [
-                {
-                  name: "twitter:card",
-                  content: "summary",
-                },
-              ]
+              {
+                name: "twitter:card",
+                content: "summary",
+              },
+            ]
         )
         .concat(meta)}
     />

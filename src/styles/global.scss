@@ -82,7 +82,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 2.4em;
+
+    font-family: 'Lora', serif;
 
     &.teal-wave::before {
         content: url(/images/wave_teal.svg);
