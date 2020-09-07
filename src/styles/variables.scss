@@ -17,7 +17,8 @@ $light-teal: #0fd19e;
 
 //// Blue
 $light-blue: #e0fcf3;
-$gradient-blue: linear-gradient(to bottom, #fff, $light-blue);
+$gradient-blue: linear-gradient(to bottom, #fff, $light-blue 50%, $dark-teal);
+
 
 //// Gray
 $dark-gray: #373a47;
