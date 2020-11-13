@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+
+.footer {
+
+    background-color: $light-blue;
+
+    .footer-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        h3 {
+            text-align: center;
+            font-family:'Lora';
+        }
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+
+        }
+
+        .sitemap ul {
+            list-style: none;
+            padding-left:0;
+        }
+
+    }
+
+
+
+}

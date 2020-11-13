@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+
+
+.contact {
+
+    background: $light-blue;
+
+    h2 {
+        font-size:1.8em;
+    }
+
+
+    .contact-grid {
+        display:flex;
+        flex-wrap: wrap;
+
+        .column {
+            flex:1;
+            min-width:275px;
+        }
+    }
+
+
+    .contact-form {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        padding:0 10px;
+
+
+        label,
+        input,
+        textarea {
+            width: 90%;
+            display: block;
+        }
+
+        label {
+            display: none;
+        }
+
+        input,
+        textarea {
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            border-width:1px;
+
+            &::placeholder {
+                color:$text-gray;
+            }
+        }
+
+        button[type="submit"] {
+            width: auto;
+            padding: 15px 25px;
+            display: inline-block;
+        }
+
+        .GPDR {
+
+            input {
+                margin-right:10px;
+            }
+
+            input,label{
+                width:auto;
+                display:inline;
+            }
+
+
+        }
+
+    }
+}

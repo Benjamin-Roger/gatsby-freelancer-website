@@ -1,0 +1,35 @@
+// Theme colors
+
+//// Orange
+$extra-dark-orange: #9b2603;
+$dark-orange: #d23c0f;
+$light-orange: #ff5d2b;
+$extra-light-orange: #fcce7c;
+$light-orange-80: #ff5d2b80;
+
+//// Red
+$light-red: #ffdcc5;
+$dark-red: #5b2d0e;
+
+//// Teal
+$dark-teal: #037657;
+$light-teal: #0fd19e;
+
+//// Blue
+$light-blue: #e0fcf3;
+$gradient-blue: linear-gradient(to bottom, #fff, $light-blue);
+
+$gradient-blue-section: linear-gradient(to top left, #fff, #abf6de 50%, $light-blue);
+
+
+
+
+//// Gray
+$dark-gray: #373a47;
+
+// Text colors
+$text-gray: #1a1a1a;
+
+// Fonts
+$fonts: "Avenir", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

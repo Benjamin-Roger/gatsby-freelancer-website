@@ -1,0 +1,138 @@
+@import "../../styles/variables.scss";
+
+.story {
+    background: $gradient-blue-section;
+    padding-bottom:100px;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 150px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(transparent, #fff);
+    }
+
+    .story-grid {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+
+            &.picture {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    padding: 5%;
+
+                    .st0 {
+                        fill: #bbdefb;
+                    }
+
+                    .st1 {
+                        fill: #64b5f6;
+                        animation: movingAround 1.5s infinite;
+                    }
+
+                    .st2 {
+                        fill: #ff5252;
+                    }
+
+                    .st3 {
+                        fill: #283593;
+                    }
+
+                    .st4 {
+                        fill: #9cb5bf;
+                    }
+
+                    .st5 {
+                        fill: #fff59d;
+                    }
+
+                    .st6 {
+                        fill: #c6d5db;
+                    }
+
+                    .st7 {
+                        fill: #40c4ff;
+                    }
+
+                    .st8 {
+                        fill: #f0f4f7;
+                    }
+
+                    .st9 {
+                        fill: #ffffff;
+                    }
+
+                    .st10 {
+                        fill: #32a4ea;
+                    }
+
+                    .st11 {
+                        fill: #2385d5;
+                    }
+
+                    .wifi .st7,
+                    .wifi .st10,
+                    .wifi .st11,
+                    .screen .st9 {
+                        animation: blinking 1.5s infinite;
+                    }
+
+                    .wifi .st10 {
+                        animation-delay: 0.5s;
+                    }
+
+                    .wifi .st7 {
+                        animation-delay: 1s;
+                    }
+
+                    .screen g:nth-child(3n) .st9 {
+                        animation-delay: 0.5s;
+                    }
+
+                    .screen g:nth-child(3n + 1) .st9 {
+                        animation-delay: 1s;
+                    }
+
+                    .screen g:nth-child(3n + 2) .st9 {
+                        animation-delay: 1.5s;
+                    }
+
+                    @keyframes movingAround {
+                        0% {
+                            transform: translateY(0px);
+                        }
+
+                        50% {
+                            transform: translateY(7px);
+                        }
+
+                        100% {
+                            transform: translateY(0px);
+                        }
+                    }
+
+                    @keyframes blinking {
+                        0% {
+                            opacity: 1;
+                        }
+
+                        33% {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

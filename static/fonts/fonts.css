@@ -1,0 +1,21 @@
+@font-face {
+	font-family:'Avenir';
+	src:url('AvenirLTStd-Light.otf');
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family:'Avenir';
+	font-weight:700;
+	src:url('AvenirLTStd-Heavy.otf');
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family:'Avenir';
+	font-weight:900;
+	src:url('AvenirLTStd-Black.otf');
+	font-display: swap;
+}

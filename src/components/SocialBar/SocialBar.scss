@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+
+    a {
+        display: block;
+        width: 45px;
+        opacity: 0.8;
+        transition: 0.2s opacity;
+        margin: 0 5px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

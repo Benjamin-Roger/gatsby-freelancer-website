@@ -1,0 +1,92 @@
+[
+  {
+    "title": {
+      "fr": "Mes technologies de références",
+      "en": "My technologies of reference"
+    },
+    "primary_technologies": {
+      "technologies": [
+        {
+          "title": "Wordpress",
+          "image": {
+            "href": "/images/Wordpress.svg"
+          },
+          "text": {
+            "fr": "CMS le plus utilisé et incontournable. Je réalise des thèmes sur mesure et des plugins.",
+            "en": "Most widespread CMS worldwide. I make specific themes and plugins."
+          }
+        },
+        {
+          "title": "React/Next/Express/NodeJS",
+          "image": {
+            "href": "/images/React.svg"
+          },
+          "text": {
+            "fr": "Framework résilient, je réalise des applications (dashboard, applications complètes...) sur React avec Next ou Express selon les besoins.",
+            "en": "Composed of reliable frameworks, I use this JS stack to create Web apps (dashboard, full business applications)."
+          }
+        },
+        {
+          "title": "Wagtail",
+          "image": {
+            "href": "/images/wagtail.svg"
+          },
+          "text": {
+            "fr": "Moins connu, Wagtail est un CMS en Python, basé sur Django. Je réalise des sites vitrine nécessitant une administration simple et résiliente.",
+            "en": "Lesser known, Wagtail is a CMS made in Python, build on Django. I use this technology for straightforward showcase custom websites with a simple administration."
+          }
+        }
+      ]
+    },
+    "secondary_technologies": {
+      "title": {
+        "fr": "Voir le détail des technologies",
+        "en": "See all technologies"
+      },
+      "technologies": [
+        {
+          "category": {
+            "fr": "Front-End : ",
+            "en": "Front-End: "
+          },
+          "technology": "React, Next, Gatsby"
+        },
+        {
+          "category": {
+            "fr": "Back-End : ",
+            "en": "Back-End: "
+          },
+          "technology": "NodeJS, Flask"
+        },
+        {
+          "category": {
+            "fr": "CMS : ",
+            "en": "CMS: "
+          },
+          "technology": "Wordpress, Wagtail"
+        },
+        {
+          "category": {
+            "fr": "Style : ",
+            "en": "Style: "
+          },
+          "technology": "Sass/SCSS, Bootstrap, Tailwind"
+        },
+        {
+          "category": {
+            "fr": "Serveurs : ",
+            "en": "Servers: "
+          },
+          "technology": "Apache, NodeJS/ExpressJS"
+        },
+        {
+          "category": {
+            "fr": "Langages : ",
+            "en": "Languages: "
+          },
+          "technology": "Javascript, Python, PHP"
+        }
+      ]
+    }
+  }
+]
